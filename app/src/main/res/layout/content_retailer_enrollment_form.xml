@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:fillViewport="false">
+    <android.support.v7.widget.CardView
+        android:id="@+id/c1"
+        android:layout_width="match_parent"
+        card_view:cardCornerRadius="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Store Name:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_store_name"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Type of Entity:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView" />
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center"
+                        android:id="@+id/retailer_type_entity_sppiner"
+                        >
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:text="Complete Address:"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_complete_address"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:textSize="12sp"
+                    android:maxLength="10"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Lead Closure Reason:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/retailer_lead_closure_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Locality:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_locality"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Store Opening Time:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_opening_time"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Store Closing Time:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_closing_time"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Outlent Format:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/retailer_outletformat_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Billing System:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/retailer_billingsystem_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Outlet Type:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/retailer_outlettype_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Store Phone Number:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_store_phonenumber"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:maxLength="12"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Number of Billing Points:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/retailer_billing_point_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Proof of Entity Establishment:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView3" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/retailer_proof_entiity_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Entity Proof Number:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_entity_proofno"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Store Email ID:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_store_emailid"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Store GPS Location:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_gps_location"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Owner Name:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_owner_name"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Owner Contact Number:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_owner_contactnoctno"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Gender:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/retailer_gender_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="ID Proof Type:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/retailer_id_proof_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="ID Proof Number:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_id_proofno"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Address Proof Type:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_address_proof_type"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Address Proof:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_address_proof"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</ScrollView>

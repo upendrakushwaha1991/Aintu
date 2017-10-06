@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:fillViewport="false">
+    <android.support.v7.widget.CardView
+        android:id="@+id/c1"
+        android:layout_width="match_parent"
+        card_view:cardCornerRadius="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Proof of Entity Establishment:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView3" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/kyc_proof_entiity_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Entity Proof Number:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/kyc_entity_proofno"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:maxLength="15"
+                    android:layout_weight=".4"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/kyc_imageentity"
+                        android:layout_width="50dp"
+                        android:background="@drawable/cam_icon"
+                        android:layout_height="30dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".2"
+                        android:layout_marginLeft="5dp"
+                        android:text="P"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:background="@drawable/rouded_corner"
+                        android:layout_height="match_parent"
+                        android:id="@+id/picproofnumber" />
+
+                </LinearLayout>
+<!--
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_marginLeft="5dp"
+                    android:text="P"
+                    android:gravity="center"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent"
+                    android:id="@+id/picproofnumber" />
+-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Store Email ID:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/kyc_store_emailid"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Store GPS Location:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_gps_location"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Owner Name:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:id="@+id/kyc_owner_name"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Owner Mobile Number:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/kyc_owner_contactnoctno"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Gender:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/kyc_gender_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="ID Proof Type:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/kyc_id_proof_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            ///
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Address Proof:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/address_proof_proof_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+<!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="ID Proof Number:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:id="@+id/kyc_id_proofno"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/picpidroofnumber"
+                        android:layout_width="0dp"
+                        android:layout_weight=".2"
+                        android:layout_marginLeft="5dp"
+                        android:text="P"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:background="@drawable/rouded_corner"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="ID Proof Number:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/kyc_id_proofno"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Front:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:visibility="invisible"
+                    android:singleLine="true"
+                    android:layout_weight=".4"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/kyc_id_proof_no"
+                        android:layout_width="50dp"
+                        android:background="@drawable/cam_icon"
+                        android:layout_height="30dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".2"
+                        android:layout_marginLeft="5dp"
+                        android:text="P"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:background="@drawable/rouded_corner"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Back:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:visibility="invisible"
+                    android:singleLine="true"
+                    android:layout_weight=".4"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/back_image"
+                        android:layout_width="50dp"
+                        android:background="@drawable/cam_icon"
+                        android:layout_height="30dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".2"
+                        android:layout_marginLeft="5dp"
+                        android:text="P"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:background="@drawable/rouded_corner"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="visible"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Address Proof Type:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/kyc_address_proof_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+                <!--
+                                <EditText
+                                    android:id="@+id/kyc_address_proof_type"
+                                    android:padding="7dp"
+                                    android:background="@drawable/rouded_corner"
+                                    android:layout_width="0dp"
+                                    android:textSize="12sp"
+                                    android:singleLine="true"
+                                    android:layout_weight=".6"
+                                    android:layout_height="match_parent" />
+                -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Cancelled Cheque:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:id="@+id/kyc_id"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:visibility="invisible"
+                    android:singleLine="true"
+                    android:layout_weight=".4"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/address_proof_image"
+                        android:layout_width="50dp"
+                        android:background="@drawable/cam_icon"
+                        android:layout_height="30dp" />
+
+                    <TextView
+                        android:id="@+id/picpidroo"
+                        android:layout_width="0dp"
+                        android:layout_weight=".2"
+                        android:layout_marginLeft="5dp"
+                        android:text="P"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:background="@drawable/rouded_corner"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="visible"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Address Proof:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/kyc_address_proof"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:layout_weight=".4"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:background="@drawable/cam_icon"
+                        android:layout_height="30dp"
+                        android:id="@+id/kyc_adddress_proof" />
+
+                    <TextView
+                        android:id="@+id/picpaddressproof"
+                        android:layout_width="0dp"
+                        android:layout_weight=".2"
+                        android:layout_marginLeft="5dp"
+                        android:text="P"
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:background="@drawable/rouded_corner"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</ScrollView>

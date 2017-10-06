@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:fillViewport="false">
+    <android.support.v7.widget.CardView
+        android:id="@+id/c1"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="5dp"
+        android:elevation="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Date:"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/datetime"
+                    android:layout_width="0dp"
+                    android:text="datetime"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Fild Nmae:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_fild_name"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Store Name:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_store_name"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:text="Store Address:"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_store_address"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:textSize="12sp"
+                    android:maxLength="10"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:text="Contact Person:"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_contact_person"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:inputType="phone"
+                    android:textSize="12sp"
+                    android:maxLength="12"
+                    android:singleLine="true"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:text="Owner Name:"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_owner_name"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:text="Person Met:"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_person_meet"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Visit Type:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView" />
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center"
+                        android:id="@+id/retailer_vist_sppiner"
+                        >
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Store Visited With:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/retailer_store_visit_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Status:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/retailer_status_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:text="Reason for Rejection by Aintu:"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/retailer_reson_aintu"
+                    android:padding="7dp"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Reporting Date:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView2" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="32dip">
+                    <TextView
+                        android:id="@+id/reportingdate"
+                        android:layout_width="0dp"
+                        android:hint="mm/dd/yyy"
+                        android:layout_weight="0.39"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/black"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/icon_date"
+                        android:layout_width="0dp"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text="@string/fa_calendar"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
+                        android:layout_weight=".2"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Reason for Rejection by Retailer:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/retailer_reason_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Reason for Followup:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/retailer_reson_followup_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</ScrollView>

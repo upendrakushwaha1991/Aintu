@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:fillViewport="false">
+    <android.support.v7.widget.CardView
+        android:id="@+id/c1"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="5dp"
+        android:elevation="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Date:"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/datetime"
+                    android:layout_width="0dp"
+                    android:text="datetime"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_weight=".6"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:text="Store Format:"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView" />
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center"
+                        android:id="@+id/profile_store_format_sppiner"
+                        >
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:text="Store Carpet Area:"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/profile_store_carpet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        android:maxLength="6"
+                        android:hint="(Square Feet)"
+                        android:inputType="numberDecimal"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center">
+                    </EditText>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:text="Freezer Chiller Available:"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/profile_freezer_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:text="Available Brands:"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/profile_available_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:text="Type of Entity:"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent"
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center"
+                        android:id="@+id/profile_type_entity_sppiner"
+                        >
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:text="Store Opening Time:"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="32dip">
+                    <EditText
+                        android:id="@+id/profile_opening_time"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.39"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"
+                        android:editable="false"
+                        android:background="@null"
+                        android:textColor="@android:color/black"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/icon_timeopening"
+                        android:layout_width="0dp"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text="@string/fa_calendar"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
+                        android:layout_weight=".2"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:text="Store Closing Time:"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="32dip">
+                    <EditText
+                        android:id="@+id/profile_closing_time"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.39"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="5dp"
+                        android:editable="false"
+                        android:background="@null"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/black"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/icon_timeclosing"
+                        android:layout_width="0dp"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text="@string/fa_calendar"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
+                        android:layout_weight=".2"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:text="Outlent Format:"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/profile_outletformat_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:text="Billing System:"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/profile_billingsystem_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_pos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:text="Name of POS :"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/profile_name_of_pos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center">
+                    </EditText>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:text="Outlet Type:"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/profile_outlettype_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:text="Number of Billing Points:"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/rouded_corner"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/profile_billing_point_sppiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_gravity="center">
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/drawer_layout_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</ScrollView>
