@@ -45,7 +45,7 @@
     <option name="ACTIVITY_CLASS" value="aintu.cpm.com.aintu.dailyentry.GeoTagActivity" />
     <method>
       <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517471749166" />
+      <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517471804042" />
     </method>
   </configuration>
 </component>
