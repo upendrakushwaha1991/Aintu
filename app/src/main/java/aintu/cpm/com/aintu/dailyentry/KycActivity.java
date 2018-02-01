@@ -199,8 +199,6 @@ public class KycActivity extends AppCompatActivity implements View.OnClickListen
 
 
 
-
-
         address_proof_type_adapter = new ArrayAdapter<CharSequence>(this, android.R.layout.simple_spinner_item);
         address_proof_type_adapter.add("Select Address Proof Type");
         for (int i = 0; i < identificationTypeMasterData.size(); i++) {

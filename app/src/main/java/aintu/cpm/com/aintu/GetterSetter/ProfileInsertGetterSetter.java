@@ -2,7 +2,7 @@ package aintu.cpm.com.aintu.GetterSetter;
 
 import java.io.Serializable;
 
-public class ProfileInsertGetterSetter implements Serializable {
+    public class ProfileInsertGetterSetter implements Serializable {
 
     private String profile_store_format_cd;
     private String profile_store_format;
